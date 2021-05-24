@@ -1,0 +1,38 @@
+.toggle-theme-button-dark {
+  position: absolute;
+  left: 50px;
+  top: 30px;
+  padding: 0.5rem 1rem;
+  width: 10rem;
+  font-family: "Montserrat", monospace;
+  background-color: transparent;
+  cursor: pointer;
+
+  color: white;
+  border: 2px dashed rgb(141, 141, 141);
+}
+.toggle-theme-button-dark:hover {
+  background-color: #dfdfdf;
+  color: rgb(0, 0, 0);
+  border: 2px dashed rgb(49, 49, 49);
+  transition: 500ms;
+}
+.toggle-theme-button-light {
+  position: absolute;
+  left: 50px;
+  top: 30px;
+  padding: 0.5rem 1rem;
+  width: 10rem;
+  font-family: "Montserrat", monospace;
+  background-color: transparent;
+  cursor: pointer;
+
+  color: rgb(0, 0, 0);
+  border: 2px dashed rgb(49, 49, 49);
+}
+.toggle-theme-button-light:hover {
+  background-color: black;
+  color: rgb(196, 196, 196);
+  border: 2px dashed rgb(219, 219, 219);
+  transition: 500ms;
+}
