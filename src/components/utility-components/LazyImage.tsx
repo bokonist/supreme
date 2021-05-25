@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import loadingGIF from "../assets/loading.gif";
+import loadingGIF from "../../assets/loading.gif";
 
 interface Props{
   alt: string;

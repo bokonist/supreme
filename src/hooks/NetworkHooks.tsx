@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useHttp = (url: string, dependencies: []) => {
+const useFetch = (url: string, dependencies: []) => {
   const [isLoading, setIsLoading] = useState(false);
   const [fetchedData, setFetchedData] = useState(null);
 
@@ -28,4 +28,4 @@ const useHttp = (url: string, dependencies: []) => {
   return [isLoading, fetchedData];
 };
 
-export { useHttp };
+export { useFetch };
