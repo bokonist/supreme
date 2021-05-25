@@ -1,11 +1,13 @@
 .toggle-theme-button-dark {
+  z-index: 4000;
+
   position: absolute;
   left: 50px;
   top: 30px;
   padding: 0.5rem 1rem;
   width: 10rem;
   font-family: "Montserrat", monospace;
-  background-color: transparent;
+  background-color: black;
   cursor: pointer;
 
   color: white;
@@ -18,13 +20,15 @@
   transition: 500ms;
 }
 .toggle-theme-button-light {
+  z-index: 4000;
+
   position: absolute;
   left: 50px;
   top: 30px;
   padding: 0.5rem 1rem;
   width: 10rem;
   font-family: "Montserrat", monospace;
-  background-color: transparent;
+  background-color: white;
   cursor: pointer;
 
   color: rgb(0, 0, 0);
