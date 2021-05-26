@@ -9,9 +9,7 @@ export const Routes = () => {
     <Router>
       <Switch>
         <Route exact path="/" component={Home}></Route>
-        <Route exact path="/shop" component={Shop}></Route>
-        <Route exact path="/shop/item/" component={Shop}></Route>
-        <Route exact path="/shop/item/:id" component={ItemDetail}></Route>
+        <Route  path="/shop" component={Shop}></Route>
         <Route path="/" component={Error404}></Route>
       </Switch>
     </Router>

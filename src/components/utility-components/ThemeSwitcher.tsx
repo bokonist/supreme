@@ -14,7 +14,7 @@ const ThemeSwitcher: React.FC<Props> = (props) => {
       className={"toggle-theme-button" + (theme ? "-dark" : "-light")}
       onClick={props.toggleTheme}
     >
-      {theme ? "Light Mode" : "Dark Mode"}
+      {theme ? "L" : "D"}
     </button>
   );
 }
