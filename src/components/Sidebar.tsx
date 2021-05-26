@@ -1,25 +1,39 @@
 import "../styles/Sidebar.css";
 
+import { Link } from "react-router-dom";
+import { useEffect, useState, useContext } from "react";
+import { InventoryContext } from "../contexts/InventoryContext";
 
-import {Link} from 'react-router-dom'
+interface Props {}
 
-interface Props{
-  categories: string[];
-}
-
-const Sidebar:React.FC<Props> = (props)=> {
-  const {categories} = props;
+const Sidebar: React.FC<Props> = (props) => {
+  const items = useContext(InventoryContext);
+  const [myCategories, setCategories] = useState(
+    items.reduce((acc: string[], item) => {
+      if (!acc.includes(item.category)) acc.push(item.category);
+      return acc;
+    }, [])
+  );
+  useEffect(() => {
+    setCategories((prevCategories) => {
+      return ["All", ...prevCategories];
+    });
+  }, []);
   return (
     <div className="sidebar-container">
-      {
-        categories.map((category,index) =>{
-          return(<Link to={`/shop/category/${category.toLowerCase()}`} key={index} className="category-item">
+      {myCategories.map((category, index) => {
+        return (
+          <Link
+            to={`/shop/category/${category.toLowerCase()}`}
+            key={index}
+            className="category-item"
+          >
             {category}
-          </Link>);
-        })
-      }
+          </Link>
+        );
+      })}
     </div>
   );
-}
+};
 
 export default Sidebar;
