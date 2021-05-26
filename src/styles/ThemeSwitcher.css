@@ -2,12 +2,12 @@
   z-index: 4000;
 
   position: absolute;
-  left: 50px;
-  top: 30px;
+  left: 1rem;
+  top: 1.2rem;
   padding: 0.5rem 1rem;
-  width: 10rem;
+  width: 3rem;
   font-family: "Montserrat", monospace;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.219);
   cursor: pointer;
 
   color: white;
@@ -23,12 +23,12 @@
   z-index: 4000;
 
   position: absolute;
-  left: 50px;
-  top: 30px;
+  left: 1rem;
+  top: 1.2rem;
   padding: 0.5rem 1rem;
-  width: 10rem;
+  width: 3rem;
   font-family: "Montserrat", monospace;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.322);
   cursor: pointer;
 
   color: rgb(0, 0, 0);

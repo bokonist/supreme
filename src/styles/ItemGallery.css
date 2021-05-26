@@ -1,0 +1,13 @@
+.App-dark .item-card-container {
+}
+.App-light .item-card-container {
+  position: absolute;
+  top: 10rem;
+  right: 0rem;
+  background-color: rgb(172, 172, 172);
+  height: fit-content;
+  width: fit-content;
+
+  display: grid;
+  grid-template-columns: auto;
+}

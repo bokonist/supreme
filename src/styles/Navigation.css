@@ -1,0 +1,84 @@
+.App-dark .header {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  height: 6rem;
+  width: 100%;
+  padding: 0rem 2rem 0rem 7rem;
+
+  background-color: transparent;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-dark .logo {
+  height: 3.5rem;
+  width: 12rem;
+
+  border: 2px solid rgb(27, 27, 27);
+
+  cursor: pointer;
+}
+.App-dark .logo:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
+.App-dark .cart-icon {
+  height: 3rem;
+  width: 3rem;
+
+  filter: invert(100%);
+
+  cursor: pointer;
+}
+.App-dark .cart-icon:hover {
+  transform: scale(1.15);
+  transition: 300ms;
+}
+
+/*
+  LIGHT THEMES
+  */
+
+.App-light .header {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  height: 6rem;
+  width: 100%;
+  padding: 0rem 2rem 0rem 7rem;
+
+  background-color: transparent;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-light .logo {
+  height: 3.5rem;
+  width: 12rem;
+
+  border: 2px solid rgb(27, 27, 27);
+  cursor: pointer;
+}
+.App-light .logo:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
+.App-light .cart-icon {
+  height: 3rem;
+  width: 3rem;
+
+  cursor: pointer;
+}
+.App-light .cart-icon:hover {
+  transform: scale(1.15);
+  transition: 300ms;
+}

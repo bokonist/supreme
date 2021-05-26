@@ -1,0 +1,92 @@
+.App-dark .sidebar-container {
+  position: absolute;
+  left: 1rem;
+  top: 7rem;
+
+  height: 80%;
+  width: 27rem;
+  background-color: transparent;
+
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0rem 2rem 2rem 0rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotate3d(0, 1, 0, 30deg) rotateX(5deg);
+  box-shadow: -1rem 0.5rem 0.9rem rgba(255, 255, 255, 0.541);
+  transform-style: preserve-3d;
+  transform-origin: center;
+}
+.App-dark .sidebar-container:hover {
+  transition: 600ms ease-out;
+  transform: rotate3d(0, 1, 0, 0deg) rotateX(0deg);
+  box-shadow: 0rem 0rem 0rem rgba(255, 255, 255, 0.541);
+  background-color: rgba(255, 255, 255, 0.014);
+}
+
+.App-dark .category-item {
+  color: rgb(175, 175, 175);
+  font-family: "Signika", monospace;
+
+  font-size: 5rem;
+  text-decoration: none;
+  cursor: pointer;
+
+  margin: 0.5rem 0rem;
+  padding: 0rem 1rem;
+}
+.App-dark .category-item:hover {
+  transition: 200ms;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.918);
+}
+
+.App-light .sidebar-container {
+  position: absolute;
+  left: 1rem;
+  top: 7rem;
+
+  height: 80%;
+  width: 27rem;
+  background-color: transparent;
+
+  border: 2px solid rgba(0, 0, 0, 0.418);
+  border-radius: 0rem 2rem 2rem 0rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotate3d(0, 1, 0, 30deg) rotateX(5deg);
+  box-shadow: -1rem 1rem 0.9rem rgba(0, 0, 0, 0.541);
+  transform-style: preserve-3d;
+  transform-origin: center;
+}
+.App-light .sidebar-container:hover {
+  transition: 600ms ease-out;
+  transform: rotate3d(0, 1, 0, 0deg) rotateX(0deg);
+  box-shadow: 0rem 0rem 0rem rgba(0, 0, 0, 0.541);
+  background-color: rgba(255, 255, 255, 0.014);
+}
+
+.App-light .category-item {
+  color: rgb(44, 44, 44);
+  font-family: "Signika", monospace;
+
+  font-size: 5rem;
+  text-decoration: none;
+  cursor: pointer;
+
+  margin: 0.5rem 0rem;
+  padding: 0rem 1rem;
+}
+.App-light .category-item:hover {
+  transition: 700ms;
+  text-decoration: underline;
+
+  color: rgb(255, 255, 255);
+  background-color: rgb(68, 68, 68);
+}
