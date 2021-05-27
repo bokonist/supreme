@@ -34,6 +34,17 @@
 
   padding: 1rem 2rem;
 }
+.App-dark .card-price {
+  color: white;
+  font-family: "Montserrat";
+  font-weight: bolder;
+
+  margin-bottom: 1rem;
+}
+.App-dark .card-calculated-price {
+  color: red;
+  font-size: 1.3rem;
+}
 .App-dark .add-to-cart {
   cursor: pointer;
   width: 10rem;
@@ -116,6 +127,19 @@
 
   padding: 1rem 2rem;
 }
+
+.App-light .card-price {
+  color: rgb(36, 36, 36);
+  font-family: "Montserrat";
+  font-weight: bolder;
+
+  margin-bottom: 1rem;
+}
+.App-light .card-calculated-price {
+  color: rgb(206, 0, 0);
+  font-size: 1.3rem;
+}
+
 .App-light .add-to-cart {
   cursor: pointer;
   width: 10rem;
