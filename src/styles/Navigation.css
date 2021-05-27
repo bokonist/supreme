@@ -31,6 +31,27 @@
   transform: scale(1.1);
   transition: 300ms;
 }
+.App-dark .cart-details {
+  position: relative;
+}
+.App-dark .cart-count {
+  color: black;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 3px solid rgb(160, 160, 160);
+  background-color: rgba(255, 255, 255, 0.836);
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  font-size: 1.1rem;
+  font-family: "Montserrat";
+  font-weight: bolder;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .App-dark .cart-icon {
   height: 3rem;
   width: 3rem;
@@ -39,7 +60,7 @@
 
   cursor: pointer;
 }
-.App-dark .cart-icon:hover {
+.App-dark .cart-details:hover {
   transform: scale(1.15);
   transition: 300ms;
 }
@@ -76,13 +97,34 @@
   transform: scale(1.1);
   transition: 300ms;
 }
+.App-light .cart-details {
+  position: relative;
+}
+.App-light .cart-count {
+  color: black;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 3px solid rgb(26, 26, 26);
+  background-color: rgba(255, 255, 255, 0.836);
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  font-size: 1.1rem;
+  font-family: "Montserrat";
+  font-weight: bolder;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .App-light .cart-icon {
   height: 3rem;
   width: 3rem;
 
   cursor: pointer;
 }
-.App-light .cart-icon:hover {
+.App-light .cart-details:hover {
   transform: scale(1.15);
   transition: 300ms;
 }
