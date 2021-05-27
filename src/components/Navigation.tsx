@@ -24,10 +24,12 @@ const Navigation: React.FC<Props> = () => {
       <Link to="/">
         <img src={logo} className="logo" alt="supreme logo" />
       </Link>
-      <div className="cart-details">
-        <img src={cart_icon} className="cart-icon" alt="shopping cart" />
-        <p className="cart-count">{totalItems ? totalItems : 0}</p>
-      </div>
+      <Link to="/shop/cart">
+        <div className="cart-details">
+          <img src={cart_icon} className="cart-icon" alt="shopping cart" />
+          <p className="cart-count">{totalItems ? totalItems : 0}</p>
+        </div>
+      </Link>
     </div>
   );
 };
