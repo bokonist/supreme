@@ -4,21 +4,9 @@ import Sidebar from "./Sidebar";
 import ItemDetail from "./ItemDetail";
 import Cart from "./Cart";
 import ItemGallery from "./ItemGallery";
-import { useCallback, useContext, useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
-import { CartContext } from "../contexts/CartContext";
 
 interface Props {}
-interface Product {
-  id: string;
-  name: string;
-  description: string;
-  category: string;
-  image: string;
-  quantity: number;
-  price: number;
-}
-
 const Shop: React.FC<Props> = () => {
   return (
     <>
