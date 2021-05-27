@@ -56,7 +56,12 @@ function CartReducer(currentCart: CartItem[], action: CartAction) {
       cartClone = [...currentCart];
       cartClone.forEach((item, index) => {
         if (item.id === action.item.id) {
-          if (cartClone[index].quantity !== 0) cartClone[index].quantity--;
+          if (cartClone[index].quantity !== 0) {
+            cartClone[index].quantity--;
+          }
+          if (cartClone[index].quantity === 0) {
+            cartClone.splice(index, 1);
+          }
         }
       });
       return cartClone;
