@@ -53,7 +53,14 @@ const Cart: React.FC<Props> = () => {
           </p>
         </div>
 
-        <button className="checkout-button">CHECKOUT</button>
+        <button
+          className="checkout-button"
+          onClick={() => {
+            window.open("https://www.supremenewyork.com", "_blank");
+          }}
+        >
+          CHECKOUT
+        </button>
       </div>
       {cartItems.map((item, index) => {
         return <CartItem key={`cart-${index}`} item={item} />;
