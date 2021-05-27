@@ -46,7 +46,7 @@ const ItemCard: React.FC<Props> = (props) => {
         return 0;
       }
     });
-  }, [cartDetails]);
+  }, [cartDetails, details.id]);
   useEffect(() => {
     import(`../assets/items/${details.image}`).then((imageData) => {
       setImage(imageData.default);
