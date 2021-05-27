@@ -1,0 +1,162 @@
+.App-dark .card {
+  opacity: 0.7;
+
+  height: 30rem;
+  width: 20rem;
+  border: 1px dashed rgba(206, 206, 206, 0.774);
+
+  border-radius: 0rem 3rem 0rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0.5rem;
+}
+.App-dark .card:hover {
+  transition: 300ms;
+  transform: scale(1.04);
+  background-color: rgba(255, 255, 255, 0.07);
+  opacity: 1;
+}
+.App-dark .card-image {
+  height: 20rem;
+  width: 18rem;
+  border: 1px dashed rgba(226, 226, 226, 0.151);
+  border-radius: 0rem 3rem 0rem 3rem;
+}
+.App-dark .card-name {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Montserrat", monospace;
+
+  padding: 1rem 2rem;
+}
+.App-dark .add-to-cart {
+  cursor: pointer;
+  width: 10rem;
+  height: 2.5rem;
+  font-family: "Signika";
+  font-weight: bolder;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(24, 24, 24);
+  border: 2px solid rgb(26, 26, 26);
+}
+.App-dark .add-to-cart:hover {
+  transition: 300ms;
+  color: black;
+  background-color: rgb(218, 218, 218);
+}
+.App-dark .quantity-adjustor {
+  color: white;
+  font-family: "Montserrat", monospace;
+  width: 7rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.App-dark .quantity-adjustor button {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  height: 2rem;
+  width: 2rem;
+  color: white;
+  background-color: rgb(24, 24, 24);
+  border: 2px solid rgb(136, 136, 136);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.App-dark .increment-button:hover {
+  transition: 300ms;
+  background-color: rgb(99, 121, 90);
+}
+.App-dark .decrement-button:hover {
+  transition: 300ms;
+  background-color: rgb(121, 90, 90);
+}
+.App-light .card {
+  opacity: 0.8;
+
+  height: 30rem;
+  width: 20rem;
+  border: 1px dashed rgba(80, 80, 80, 0.774);
+
+  border-radius: 0rem 3rem 0rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0.5rem;
+}
+.App-light .card:hover {
+  transition: 300ms;
+  transform: scale(1.04);
+  background-color: rgba(0, 0, 0, 0.096);
+  opacity: 1;
+}
+.App-light .card-image {
+  height: 20rem;
+  width: 18rem;
+  border: 1px dashed rgba(80, 80, 80, 0.329);
+  border-radius: 0rem 3rem 0rem 3rem;
+}
+.App-light .card-name {
+  color: rgb(10, 10, 10);
+  text-align: center;
+  font-weight: bold;
+  font-family: "Montserrat", monospace;
+
+  padding: 1rem 2rem;
+}
+.App-light .add-to-cart {
+  cursor: pointer;
+  width: 10rem;
+  height: 2.5rem;
+  font-family: "Signika";
+  font-weight: bolder;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  background-color: rgb(219, 219, 219);
+  border: 2px solid rgb(189, 189, 189);
+}
+.App-light .add-to-cart:hover {
+  transition: 300ms;
+  color: rgb(255, 255, 255);
+  background-color: rgb(27, 27, 27);
+}
+.App-light .quantity-adjustor {
+  color: rgb(20, 20, 20);
+  font-family: "Montserrat", monospace;
+  width: 7rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.App-light .quantity-adjustor button {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: rgb(212, 212, 212);
+  border: 2px solid rgb(136, 136, 136);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.App-light .increment-button:hover {
+  transition: 300ms;
+  background-color: rgb(99, 121, 90);
+}
+.App-light .decrement-button:hover {
+  transition: 300ms;
+  background-color: rgb(121, 90, 90);
+}

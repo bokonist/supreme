@@ -1,13 +1,22 @@
 .App-dark .item-card-container {
-}
-.App-light .item-card-container {
-  position: absolute;
-  top: 10rem;
-  right: 0rem;
-  background-color: rgb(172, 172, 172);
-  height: fit-content;
-  width: fit-content;
+  height: auto;
+  width: 88rem;
+
+  padding: 1rem;
 
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.App-light .item-card-container {
+  height: auto;
+  width: 88rem;
+
+  padding: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
 }

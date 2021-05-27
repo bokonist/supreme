@@ -47,16 +47,7 @@ const ItemCard: React.FC<Props> = (props) => {
       <p className="card-name">{details.name}</p>
       <div className="cart-actions">
         {getItemQuantity(details.id) > 0 ? (
-          <div>
-            <button
-              className="increment-button"
-              onClick={() => {
-                CartDispatch({ type: "add", item: details });
-              }}
-            >
-              +
-            </button>
-            <p className="item-quantity">{getItemQuantity(details.id)}</p>
+          <div className="quantity-adjustor">
             <button
               className="decrement-button"
               onClick={() => {
@@ -65,9 +56,19 @@ const ItemCard: React.FC<Props> = (props) => {
             >
               -
             </button>
+            <p className="item-quantity">{getItemQuantity(details.id)}</p>
+            <button
+              className="increment-button"
+              onClick={() => {
+                CartDispatch({ type: "add", item: details });
+              }}
+            >
+              +
+            </button>
           </div>
         ) : (
           <button
+            className="add-to-cart"
             onClick={() => {
               CartDispatch({ type: "add", item: details });
             }}

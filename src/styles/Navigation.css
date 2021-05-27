@@ -1,5 +1,9 @@
+.header {
+  z-index: 400;
+}
+
 .App-dark .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
 
@@ -7,7 +11,7 @@
   width: 100%;
   padding: 0rem 2rem 0rem 7rem;
 
-  background-color: transparent;
+  background-color: rgba(22, 22, 22, 0.349);
 
   display: flex;
   flex-direction: row;
@@ -45,7 +49,7 @@
   */
 
 .App-light .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
 
@@ -53,7 +57,7 @@
   width: 100%;
   padding: 0rem 2rem 0rem 7rem;
 
-  background-color: transparent;
+  background-color: rgba(221, 221, 221, 0.226);
 
   display: flex;
   flex-direction: row;
