@@ -2,6 +2,7 @@ import "../styles/Shop.css";
 import Navigation from "./Navigation";
 import Sidebar from "./Sidebar";
 import ItemDetail from "./ItemDetail";
+import Cart from "./Cart";
 import ItemGallery from "./ItemGallery";
 import { useCallback, useContext, useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
@@ -27,6 +28,9 @@ const Shop: React.FC<Props> = () => {
         <Switch>
           <Route exact path="/shop/item/:id">
             <ItemDetail />
+          </Route>
+          <Route exact path="/shop/cart">
+            <Cart />
           </Route>
           <Route exact path="/shop/category/:categoryName">
             <ItemGallery display="filter" />
