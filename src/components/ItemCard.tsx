@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import "../styles/ItemCard.css";
 import loadingGIF from "../assets/loading.gif";
 import { CartContext } from "../contexts/CartContext";
-import { CartUpdaterContext } from "./App";
+import { CartUpdaterContext } from "./Shop";
 
 interface Product {
   id: string;

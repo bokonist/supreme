@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import "../styles/CartItem.css";
 import loadingGIF from "../assets/loading.gif";
-import { CartUpdaterContext } from "./App";
+import { CartUpdaterContext } from "./Shop";
 
 interface CartItemType {
   id: string;
