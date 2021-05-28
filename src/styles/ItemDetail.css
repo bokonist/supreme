@@ -1,0 +1,172 @@
+.App-dark .item-detail-container {
+  height: 37rem;
+  width: 70rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.App-dark .item-detail-container * {
+  margin: 0.25rem 0rem;
+}
+.App-dark .item-detail-name {
+  color: rgb(155, 155, 155);
+  font-family: "Montserrat", monospace;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bolder;
+}
+.App-dark .item-detail-description {
+  color: rgb(219, 219, 219);
+  font-family: "Montserrat", monospace;
+  font-size: 1rem;
+  text-align: center;
+  width: 20rem;
+}
+.App-dark .item-detail-price {
+  color: rgb(221, 221, 221);
+  font-family: "Montserrat", monospace;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.App-dark .item-detail-calculated-price {
+  color: rgb(218, 0, 0);
+}
+.App-dark .item-detail-quantity-adjustor {
+  color: white;
+  font-family: "Montserrat", monospace;
+  width: 7rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.App-dark .item-detail-quantity-adjustor button {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  height: 2rem;
+  width: 2rem;
+  color: white;
+  background-color: rgb(24, 24, 24);
+  border: 2px solid rgb(136, 136, 136);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.App-dark .item-detail-increment-button:hover {
+  transition: 300ms;
+  background-color: rgb(99, 121, 90);
+}
+.App-dark .item-detail-decrement-button:hover {
+  transition: 300ms;
+  background-color: rgb(121, 90, 90);
+}
+.App-dark .item-detail-add-to-cart {
+  cursor: pointer;
+  width: 10rem;
+  height: 2.5rem;
+  font-family: "Signika";
+  font-weight: bolder;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(24, 24, 24);
+  border: 2px solid rgb(26, 26, 26);
+}
+.App-dark .item-detail-add-to-cart:hover {
+  transition: 300ms;
+  color: black;
+  background-color: rgb(218, 218, 218);
+}
+
+/*
+
+
+
+LIGHT THEMES
+
+
+
+*/
+
+.App-light .item-detail-container {
+  height: 37rem;
+  width: 70rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.App-light .item-detail-container * {
+  margin: 0.25rem 0rem;
+}
+.App-light .item-detail-name {
+  color: rgb(31, 31, 31);
+  font-family: "Montserrat", monospace;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bolder;
+}
+.App-light .item-detail-description {
+  color: rgb(54, 54, 54);
+  font-family: "Montserrat", monospace;
+  font-size: 1rem;
+  text-align: center;
+  width: 20rem;
+}
+.App-light .item-detail-price {
+  color: rgb(49, 49, 49);
+  font-family: "Montserrat", monospace;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.App-light .item-detail-calculated-price {
+  color: rgb(172, 0, 0);
+}
+.App-light .item-detail-quantity-adjustor {
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat", monospace;
+  width: 7rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.App-light .item-detail-quantity-adjustor button {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: rgb(212, 212, 212);
+  border: 2px solid rgb(136, 136, 136);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.App-light .item-detail-increment-button:hover {
+  transition: 300ms;
+  background-color: rgb(99, 121, 90);
+}
+.App-light .item-detail-decrement-button:hover {
+  transition: 300ms;
+  background-color: rgb(121, 90, 90);
+}
+.App-light .item-detail-add-to-cart {
+  cursor: pointer;
+  width: 10rem;
+  height: 2.5rem;
+  font-family: "Signika";
+  font-weight: bolder;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  background-color: rgb(219, 219, 219);
+  border: 2px solid rgb(189, 189, 189);
+}
+.App-light .item-detail-add-to-cart:hover {
+  transition: 300ms;
+  color: rgb(255, 255, 255);
+  background-color: rgb(27, 27, 27);
+}

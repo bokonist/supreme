@@ -3,6 +3,7 @@ import "../styles/ItemCard.css";
 import loadingGIF from "../assets/loading.gif";
 import { CartContext } from "../contexts/CartContext";
 import { CartUpdaterContext } from "./Shop";
+import { Link } from "react-router-dom";
 
 interface Product {
   id: string;
@@ -54,11 +55,14 @@ const ItemCard: React.FC<Props> = (props) => {
   }, [details.image]);
   return (
     <div className="card">
-      <img
-        className="card-image"
-        src={image || loadingGIF}
-        alt={details.name}
-      ></img>
+      <Link to={`/shop/item/${details.id}`}>
+        <img
+          className="card-image"
+          src={image || loadingGIF}
+          alt={details.name}
+        ></img>
+      </Link>
+
       <p className="card-name">{details.name}</p>
       <p className="card-price">
         <span>${details.price}</span>
