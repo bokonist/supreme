@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useHistory, useParams } from "react-router";
 import { InventoryContext } from "../contexts/InventoryContext";
 import loadingGIF from "../assets/loading.gif";
 import "../styles/ItemDetail.css";
@@ -25,6 +25,8 @@ const ItemDetail: React.FC<Props> = () => {
   const CartDispatch: any = useContext(CartUpdaterContext);
   const [image, setImage] = useState<null | string>(null);
   const [item, setItem] = useState<null | Product>(null);
+
+  const history = useHistory();
   const [quantity, setQuantity] = useState(() => {
     let item = cartDetails.filter((item) => {
       if (item.id === id) {
@@ -47,9 +49,9 @@ const ItemDetail: React.FC<Props> = () => {
       }
     }
     if (!found) {
-      window.location.assign("/shop");
+      history.push("/shop");
     }
-  }, [id, items]);
+  }, [id, items, history]);
   useEffect(() => {
     if (item)
       import(`../assets/items/${item.image}`).then((imageData) => {
