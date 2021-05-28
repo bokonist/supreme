@@ -7,4 +7,13 @@ interface CartItem {
   price: number;
 }
 
-export const CartContext = React.createContext<CartItem[]>([]);
+export const CartContext = React.createContext<CartItem[]>(
+  (() => {
+    let existingData: CartItem[] = [];
+    let localData = localStorage.getItem("supremeCartData");
+    if (localData) {
+      existingData = JSON.parse(localData);
+    }
+    return existingData;
+  })()
+);

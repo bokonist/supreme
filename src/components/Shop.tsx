@@ -5,7 +5,7 @@ import ItemDetail from "./ItemDetail";
 import Cart from "./Cart";
 import ItemGallery from "./ItemGallery";
 import { Switch, Route } from "react-router-dom";
-import React, { useContext, useReducer } from "react";
+import React, { useCallback, useContext, useReducer } from "react";
 import { CartContext } from "../contexts/CartContext";
 import { InventoryContext } from "../contexts/InventoryContext";
 interface Product {
@@ -31,7 +31,7 @@ interface CartAction {
 }
 
 function CartReducer(currentCart: CartItem[], action: CartAction) {
-  //console.log(action.type, action.id);
+  //console.log(action.type, action.item.id);
   //return [{ id: 'sada',    name: "s",image: "sdas",quantity: 1,    price: 2}]
   let cartClone: CartItem[];
   switch (action.type) {
@@ -53,6 +53,7 @@ function CartReducer(currentCart: CartItem[], action: CartAction) {
           price: action.item.price,
         });
       }
+      localStorage.setItem("supremeCartData", JSON.stringify(cartClone));
       return cartClone;
     case "remove":
       cartClone = [...currentCart];
@@ -66,6 +67,7 @@ function CartReducer(currentCart: CartItem[], action: CartAction) {
           }
         }
       });
+      localStorage.setItem("supremeCartData", JSON.stringify(cartClone));
       return cartClone;
     default:
       throw new Error();
@@ -78,7 +80,7 @@ interface Props {}
 const Shop: React.FC<Props> = () => {
   let items = useContext(InventoryContext);
   const [cartItems, CartDispatch] = useReducer(
-    CartReducer,
+    useCallback(CartReducer, []),
     useContext(CartContext)
   );
   return (
