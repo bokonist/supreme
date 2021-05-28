@@ -16,13 +16,6 @@ interface Product {
 interface ParamTypes {
   id: string;
 }
-interface CartItem {
-  id: string;
-  name: string;
-  image: string;
-  quantity: number;
-  price: number;
-}
 interface Props {}
 
 const ItemDetail: React.FC<Props> = () => {
@@ -45,11 +38,16 @@ const ItemDetail: React.FC<Props> = () => {
     }
   });
   useEffect(() => {
+    let found: Boolean = false;
     for (let i = 0; i < items.length; i++) {
       if (id === items[i].id) {
         setItem(items[i]);
+        found = true;
         break;
       }
+    }
+    if (!found) {
+      window.location.assign("/shop");
     }
   }, [id, items]);
   useEffect(() => {
