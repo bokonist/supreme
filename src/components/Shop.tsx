@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar";
 import ItemDetail from "./ItemDetail";
 import Cart from "./Cart";
 import ItemGallery from "./ItemGallery";
+import { Page404 } from "../components/utility-components/Page404";
 import { Switch, Route } from "react-router-dom";
 import React, { useCallback, useContext, useReducer } from "react";
 import { CartContext } from "../contexts/CartContext";
@@ -102,6 +103,9 @@ const Shop: React.FC<Props> = () => {
               </Route>
               <Route exact path="/shop">
                 <ItemGallery display="all" />
+              </Route>
+              <Route path="/">
+                <Page404 />
               </Route>
             </Switch>
           </div>

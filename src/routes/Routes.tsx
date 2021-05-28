@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "../components/Home";
 import Shop from "../components/Shop";
-import { Error404 } from "../components/utility-components/404";
+import { Page404 } from "../components/utility-components/Page404";
 
 export const Routes = () => {
   return (
@@ -9,7 +9,7 @@ export const Routes = () => {
       <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route path="/shop" component={Shop}></Route>
-        <Route path="/" component={Error404}></Route>
+        <Route path="/" component={Shop}></Route>
       </Switch>
     </Router>
   );

@@ -1,0 +1,12 @@
+.App-dark .error-404-message {
+  color: rgb(206, 206, 206);
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: "Montserrat", monospace;
+}
+.App-light .error-404-message {
+  color: rgb(29, 29, 29);
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: "Montserrat", monospace;
+}
