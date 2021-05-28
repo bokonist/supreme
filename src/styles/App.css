@@ -4,3 +4,23 @@
 * {
   box-sizing: border-box;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(53, 53, 53);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7c7c7c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(199, 199, 199);
+}
